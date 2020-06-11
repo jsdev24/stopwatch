@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial;
+    user-select: none;
+    background-color: #F44336
+}
+
+section {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    width: 180px;
+    height: 180px;
+    border: 5px solid rgb(226, 226, 226);
+    border-radius: 50%;
+    display: inline-block;
+    text-align:center;
+    line-height: 180px;
+    font-size: 70px;
+    color: #ffffff;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px 20px;
+    border: 3px solid rgb(226, 226, 226);
+    margin-top: 15px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #ffffff;
+    transition: .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(226, 226, 226);
+    color: #000000;
+}
+
+button:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 830px) {
+    .circle {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        font-size: 70px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 3px 18px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .circle {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 3px 15px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .circle {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        font-size: 50px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 3px 12px;
+    }
+}
